@@ -4,7 +4,7 @@ podTemplate(yaml: '''
     spec:
      containers:
      - name: cloud-sdk
-       image: google/cloud-sdk
+       image: google/cloud-sdk:latest
        command:
        - sleep
        args:
