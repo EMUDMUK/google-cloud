@@ -34,6 +34,7 @@ node(POD_LABEL) {
         echo 'namespaces in the staging environment'
         kubectl get ns
         gcloud auth login --cred-file=$GOOGLE_APPLICATION_CREDENTIALS
+        gcloud config set project umls23-382610
         gcloud container clusters get-credentials hello-cluster --region us-west1 --project umls23-382610
         echo 'namespaces in the prod environment'
         kubectl get ns
